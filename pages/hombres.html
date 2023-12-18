@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RD Fitness</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc3MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/bootstrap/hombres.css">
+</head>
+<body>
+
+    <div class="preheader reubicar-pre">        <!--! Preheader-->
+        <p>ENVIOS GRATIS POR ENCIMA DE LOS $75.00 (USD)</p>
+    </div>
+
+    <section id="header" class="reubicar-header">  <!--! Header-->
+        <a href="../index.html"><img src="../imgs/rdlogo.png" class="logo reubicar-logo" alt="Logo"></a>
+
+        <div> 
+            <ul id="navbar" class="reubicar-ul">
+                <li><a class="active" href="../pages/hombres.html">Hombres</a></li>
+                <li><a href="../pages/mujeres.html">Mujeres</a></li>
+                <li><a href="../pages/nuevo.html">Nuevo</a></li>
+                <li><a href="../pages/rdfitness.html">RDFITNESS APP</a></li>
+                <li><a href="../pages/miperfil.html"><i class="fa fa-user"></i></a></li>
+                <li><input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+
+                <!-- boton de carrito-->
+                <a  data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">
+                  <i class="fa fa-shopping-cart"></i>
+                </a>      
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">TU CARRITO ESTA VACIO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="carrito-content">
+                      <img src="../imgs/micarrito/empty-bag.jpg" alt="">
+                      <p>No hay productos en tu carro</p>
+                      <p>Elige una seccion para ir:</p>
+                      <button>TIENDA HOMBRES</button>
+                      <button>TIENDA MUJERES</button>
+                    </div>
+                  </div>
+                </div>
+                
+            </ul>
+        </div>
+
+
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+
+    <!--! HERO BANNER (1)(Nuevos Lanzamientos) -->
+  <div class="hero-uno">
+    <div class="hero-des container-fluid d-flex flex-column justify-content-center align-items-flex-start ps-5">
+        <p class="h1 display-4 fw-semibold">Nuevos Lanzamientos</p>
+        <p class="h6 fw-normal text-muted text-b1-h1">Diseñados para el maximo rendimiento. Lo mas importante.</p>
+    </div>
+  </div>
+
+     <!--! HERO CAROUSEL (1)(Nuevos Lanzamientos) -->
+  <div id="carousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">    <!-- Este div abre el primer carousel-item (3 cards) -->
+            <div class="card-wrapper container-sm d-flex  justify-content-around"> <!-- Contiene a las 3 cards en flexrow-->
+
+      <div class="card  " style="width: 20rem;">    <!--! CARD 1 -->
+        <img src="../imgs/heros/carousel1/h-c-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Shorts Lifting Club</h5>
+          <p class="text-muted">S/M/L/XL</p>
+          <p class="text-muted">Salmon</p>
+          <p class="text-muted">$40.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+      <div class="card" style="width: 20rem;">    <!--! CARD 2-->
+        <img src="../imgs/heros/carousel1/h-c-2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Remera Cartoon Lifting</h5>
+          <p class="text-muted">M/L/XL/XXL</p>
+          <p class="text-muted">Blueberry</p>
+          <p class="text-muted">$26.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+      <div class="card" style="width: 20rem;">    <!--! CARD 3-->
+        <img src="../imgs/heros/carousel1/h-c-3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Shorts Lifting Club</h5>
+          <p class="text-muted">S/M/L/XL</p>
+          <p class="text-muted">Negro</p>
+          <p class="text-muted">$40.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+           </div> <!-- Este div cierra el cards-wrapper -->
+          </div> <!-- Este div cierra el primer carousel-item-active (3 primeras cards) -->
+
+          <div class="carousel-item"> <!-- Este div abre el segundo carousel-item (3 segundas cards) -->
+            <div class="card-wrapper container-sm d-flex   justify-content-around"> <!-- Contiene a las 3 cards en flexrow-->
+            
+      <div class="card  " style="width: 20rem;">    <!--! Card 4 -->
+        <img src="../imgs/heros/carousel1/h-c-4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Remera de Compresion</h5>
+          <p class="text-muted">M/L/XL/XXL</p>
+          <p class="text-muted">Negro</p>
+          <p class="text-muted">$50.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+      <div class="card" style="width: 20rem;">    <!--! Card 5 -->
+        <img src="../imgs/heros/carousel1/h-c-5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Shorts Lifting Club</h5>
+          <p class="text-muted">S/M/L/XL</p>
+          <p class="text-muted">Azul</p>
+          <p class="text-muted">$40.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+      <div class="card" style="width: 20rem;">    <!--! Card 6 -->
+        <img src="../imgs/heros/carousel1/h-c-6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Remera Heavy Duty</h5>
+          <p class="text-muted">S/M/L/XL/XXL/3XL</p>
+          <p class="text-muted">Negro</p>
+          <p class="text-muted">$45.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+           </div> <!-- Este div cierra el cards-wrapper -->
+         </div> <!-- Este div cierra el segundo carousel-item-active (3 segundas cards) -->
+
+
+          <div class="carousel-item"> <!-- Este div abre el tercer carousel-item (3 ultimas cards) -->
+            <div class="card-wrapper container-sm d-flex  justify-content-around"> <!-- Contiene a las 3 cards en flexrow-->
+
+      <div class="card " style="width: 20rem;"> <!--! Card 7-->
+        <img src="../imgs/heros/carousel1/h-c-7.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Shorts Lifting Club</h5>
+          <p class="text-muted">S/M/L/XL</p>
+          <p class="text-muted">Blanco</p>
+          <p class="text-muted">$40.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+      <div class="card" style="width: 20rem;">  <!--! Card 8-->
+        <img src="../imgs/heros/carousel1/h-c-8.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Shorts Lifting Club</h5>
+          <p class="text-muted">S/M/L/XL</p>
+          <p class="text-muted">Camuflado</p>
+          <p class="text-muted">$40.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+      <div class="card" style="width: 20rem;">  <!--! Card 9-->
+        <img src="../imgs/heros/carousel1/h-c-9.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Buzo Heavy Duty</h5>
+          <p class="text-muted">S/M/L/XL/XXL/3XL</p>
+          <p class="text-muted">Negro</p>
+          <p class="text-muted">$70.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+      
+
+           </div> <!-- Este div cierra el cards-wrapper -->
+         </div> <!-- Este div cierra el tercer carousel-item-active (3 ultimas cards) -->
+
+         
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+  </div>
+  </div>
+
+   <!--! HERO BANNER (2) (Listos para el verano) -->
+  <div class="hero-dos">
+    <div class="hero-des container-fluid d-flex flex-column justify-content-center align-items-flex-start ps-5">
+        <p class="h1 display-4 fw-semibold">Listos para el verano</p>
+        <p class="h6 fw-normal">Descubri nuestras musculosas y shorts diseñados para mantenerte fresco durante tus sesiones de entrenamiento.</p>
+    </div>
+  </div>
+
+       <!--! HERO CAROUSEL (2)(Listos para el verano) -->
+  <div id="carousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">    <!-- Este div abre el primer carousel-item (3 cards) -->
+            <div class="card-wrapper container-sm d-flex  justify-content-around"> <!-- Contiene a las 3 cards en flexrow-->
+
+      <div class="card  " style="width: 20rem;">    <!--! CARD 1 -->
+        <img src="../imgs/heros/carousel2/h-c2-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Musculosa WeightLifting Club</h5>
+          <p class="text-muted">S/M/L/XL</p>
+          <p class="text-muted">Bordo</p>
+          <p class="text-muted">$30.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+      <div class="card" style="width: 20rem;">    <!--! CARD 2-->
+        <img src="../imgs/heros/carousel2/h-c2-2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Musculosa Plain White</h5>
+          <p class="text-muted">S/M/L/XL</p>
+          <p class="text-muted">Blanco</p>
+          <p class="text-muted">$30.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+      <div class="card" style="width: 20rem;">    <!--! CARD 3-->
+        <img src="../imgs/heros/carousel2/h-c2-3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Musculosa Camel Logo</h5>
+          <p class="text-muted">S/M/L/XL</p>
+          <p class="text-muted">Camel</p>
+          <p class="text-muted">$30.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+           </div> <!-- Este div cierra el cards-wrapper -->
+          </div> <!-- Este div cierra el primer carousel-item-active (3 primeras cards) -->
+
+          <div class="carousel-item"> <!-- Este div abre el segundo carousel-item (3 segundas cards) -->
+            <div class="card-wrapper container-sm d-flex   justify-content-around"> <!-- Contiene a las 3 cards en flexrow-->
+            
+      <div class="card  " style="width: 20rem;">    <!--! Card 4 -->
+        <img src="../imgs/heros/carousel2/h-c2-4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Musculosa WeightLifting Club</h5>
+          <p class="text-muted">S/M/L/XL</p>
+          <p class="text-muted">Blanco</p>
+          <p class="text-muted">$30.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+      <div class="card" style="width: 20rem;">    <!--! Card 5 -->
+        <img src="../imgs/heros/carousel2/h-c2-5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Musculosa White Camouflage</h5>
+          <p class="text-muted">S/M/L/XL</p>
+          <p class="text-muted">Blanco</p>
+          <p class="text-muted">$40.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+      <div class="card" style="width: 20rem;">    <!--! Card 6 -->
+        <img src="../imgs/heros/carousel2/h-c2-6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Musculosa Black DropArm</h5>
+          <p class="text-muted">S/M/L/XL</p>
+          <p class="text-muted">Negro</p>
+          <p class="text-muted">$30.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+           </div> <!-- Este div cierra el cards-wrapper -->
+         </div> <!-- Este div cierra el segundo carousel-item-active (3 segundas cards) -->
+
+
+          <div class="carousel-item"> <!-- Este div abre el tercer carousel-item (3 ultimas cards) -->
+            <div class="card-wrapper container-sm d-flex  justify-content-around"> <!-- Contiene a las 3 cards en flexrow-->
+
+      <div class="card " style="width: 20rem;"> <!--! Card 7-->
+        <img src="../imgs/heros/carousel2/h-c2-7.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Musculosa Plain Orange</h5>
+          <p class="text-muted">S/M/L/XL</p>
+          <p class="text-muted">Naranja</p>
+          <p class="text-muted">$30.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+      <div class="card" style="width: 20rem;">  <!--! Card 8-->
+        <img src="../imgs/heros/carousel2/h-c2-8.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Musculosa Pink DropArm</h5>
+          <p class="text-muted">S/M/L/XL</p>
+          <p class="text-muted">Rosado</p>
+          <p class="text-muted">$30.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+
+      <div class="card" style="width: 20rem;">  <!--! Card 9-->
+        <img src="../imgs/heros/carousel2/h-c2-9.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Musculosa Classic White</h5>
+          <p class="text-muted">S/M/L/XL/XXL</p>
+          <p class="text-muted">Blanco</p>
+          <p class="text-muted">$40.00</p>
+        </div>
+        <button type="button" class="btn btn-dark">Comprar</button>
+      </div>
+      
+
+           </div> <!-- Este div cierra el cards-wrapper -->
+         </div> <!-- Este div cierra el tercer carousel-item-active (3 ultimas cards) -->
+
+         
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+  </div>
+  </div>
+
+     <!--! HERO BANNER (3) (Nuevos Lanzamientos) -->
+     <div class="hero-tres">
+      <div class="hero-des container-fluid d-flex flex-column justify-content-center align-items-flex-start ps-5">
+          <p class="h1 display-4 fw-semibold">No pares de correr !</p>
+          <p class="h6 fw-normal">Nuestras prendas mas livianas diseñadas para la máxima comodidad en el running.</p>
+      </div>
+    </div>
+  
+         <!--! HERO CAROUSEL (3)(Nuevos Lanzamientos) -->
+    <div id="carousel3" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">    <!-- Este div abre el primer carousel-item (3 cards) -->
+              <div class="card-wrapper container-sm d-flex  justify-content-around"> <!-- Contiene a las 3 cards en flexrow-->
+  
+        <div class="card  " style="width: 20rem;">    <!--! CARD 1 -->
+          <img src="../imgs/heros/carousel3/h-c3-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Remera Running Fit</h5>
+            <p class="text-muted">S/M/L/XL</p>
+            <p class="text-muted">Negro</p>
+            <p class="text-muted">$35.00</p>
+          </div>
+          <button type="button" class="btn btn-dark">Comprar</button>
+        </div>
+  
+        <div class="card" style="width: 20rem;">    <!--! CARD 2-->
+          <img src="../imgs/heros/carousel3/h-c3-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Shorts SportFit</h5>
+            <p class="text-muted">S/M/L/XL</p>
+            <p class="text-muted">Verde Fluor</p>
+            <p class="text-muted">$30.00</p>
+          </div>
+          <button type="button" class="btn btn-dark">Comprar</button>
+        </div>
+  
+        <div class="card" style="width: 20rem;">    <!--! CARD 3-->
+          <img src="../imgs/heros/carousel3/h-c3-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Remera High-Tech Fit</h5>
+            <p class="text-muted">S/M/L/XL</p>
+            <p class="text-muted">Camuflada</p>
+            <p class="text-muted">$50.00</p>
+          </div>
+          <button type="button" class="btn btn-dark">Comprar</button>
+        </div>
+  
+             </div> <!-- Este div cierra el cards-wrapper -->
+            </div> <!-- Este div cierra el primer carousel-item-active (3 primeras cards) -->
+  
+            <div class="carousel-item"> <!-- Este div abre el segundo carousel-item (3 segundas cards) -->
+              <div class="card-wrapper container-sm d-flex   justify-content-around"> <!-- Contiene a las 3 cards en flexrow-->
+              
+        <div class="card  " style="width: 20rem;">    <!--! Card 4 -->
+          <img src="../imgs/heros/carousel3/h-c3-4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Shorts SportFit</h5>
+            <p class="text-muted">S/M/L/XL</p>
+            <p class="text-muted">Gris</p>
+            <p class="text-muted">$35.00</p>
+          </div>
+          <button type="button" class="btn btn-dark">Comprar</button>
+        </div>
+  
+        <div class="card" style="width: 20rem;">    <!--! Card 5 -->
+          <img src="../imgs/heros/carousel3/h-c3-5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Musculosa UltraThin</h5>
+            <p class="text-muted">S/M/L/XL</p>
+            <p class="text-muted">Verde</p>
+            <p class="text-muted">$30.00</p>
+          </div>
+          <button type="button" class="btn btn-dark">Comprar</button>
+        </div>
+  
+        <div class="card" style="width: 20rem;">    <!--! Card 6 -->
+          <img src="../imgs/heros/carousel3/h-c3-6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Shorts Largos</h5>
+            <p class="text-muted">S/M/L/XL</p>
+            <p class="text-muted">Negro</p>
+            <p class="text-muted">$35.00</p>
+          </div>
+          <button type="button" class="btn btn-dark">Comprar</button>
+        </div>
+  
+             </div> <!-- Este div cierra el cards-wrapper -->
+           </div> <!-- Este div cierra el segundo carousel-item-active (3 segundas cards) -->
+  
+  
+            <div class="carousel-item"> <!-- Este div abre el tercer carousel-item (3 ultimas cards) -->
+              <div class="card-wrapper container-sm d-flex  justify-content-around"> <!-- Contiene a las 3 cards en flexrow-->
+  
+        <div class="card " style="width: 20rem;"> <!--! Card 7-->
+          <img src="../imgs/heros/carousel3/h-c3-7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rompevientos Sport</h5>
+            <p class="text-muted">S/M/L/XL</p>
+            <p class="text-muted">Camuflada</p>
+            <p class="text-muted">$70.00</p>
+          </div>
+          <button type="button" class="btn btn-dark">Comprar</button>
+        </div>
+  
+        <div class="card" style="width: 20rem;">  <!--! Card 8-->
+          <img src="../imgs/heros/carousel3/h-c3-8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Shorts Doble Sport</h5>
+            <p class="text-muted">S/M/L/XL</p>
+            <p class="text-muted">Gris/Negro</p>
+            <p class="text-muted">$30.00</p>
+          </div>
+          <button type="button" class="btn btn-dark">Comprar</button>
+        </div>
+  
+        <div class="card" style="width: 20rem;">  <!--! Card 9-->
+          <img src="../imgs/heros/carousel3/h-c3-9.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Shorts SportFit X</h5>
+            <p class="text-muted">S/M/L/XL</p>
+            <p class="text-muted">Rojo</p>
+            <p class="text-muted">$35.00</p>
+          </div>
+          <button type="button" class="btn btn-dark">Comprar</button>
+        </div>
+        
+  
+             </div> <!-- Este div cierra el cards-wrapper -->
+           </div> <!-- Este div cierra el tercer carousel-item-active (3 ultimas cards) -->
+  
+           
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+    </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+
+    <footer class="section-padd footer-hombres">       <!--! Footer -->
+
+        <div class="col-container">
+            <div class="columna">
+                <h4>AYUDA</h4>
+                <a href="">FAQs</a>
+                <a href="">Devoluciones y cambios</a>
+                <a href="">Contactanos</a>
+                <a href="">Terminos de servicio</a>
+                <a href="">Guia de talles</a>
+                <a href="">Privacidad de datos</a>
+            </div>
+            <div class="columna">
+                <h4>SUBSCRIBITE</h4>
+                <p>Subscribite a nuestros canales de difusión para recibir noticias exclusivas sobre nuestros productos.</p>
+                <input type="text" placeholder="Coloca tu email..">
+                <button>SUBSCRIBIRME</button>
+            </div>
+            <div class="columna">
+                <h4>COMPRA AHORA</h4>
+                <a href="">Buscar</a>
+                <a href="">Todos los productos</a>
+                <a href="">Gift Card</a>
+                <a href="">Seguimientos</a>
+                <a href="">Mas Vendidos</a>
+            </div>
+            <div class="columna">
+                <div class="texto-apps">
+                    <h4>INSTALA NUESTRA APP</h4>
+                    <p>Disponible para Appstore y GooglePlay</p>
+                </div>
+                <div class="apps">
+                    <img src="../imgs/appstore.png" alt="">
+                    <img src="../imgs/googleplay.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    <div class="fila-container">
+        <div class="fila1">
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-tiktok"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="fila2">
+            <img src="../imgs/visa.jpg" alt="">
+            <img src="../imgs/applepay.jpg" alt="">
+            <img src="../imgs/amex.jpg" alt="">
+            <img src="../imgs/mastercard.jpg" alt="">
+            <img src="../imgs/paypal.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2023, Ramiro Delgado | Coderhouse | Derechos Reservados.</p>
+    </div>
+</footer>
+
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

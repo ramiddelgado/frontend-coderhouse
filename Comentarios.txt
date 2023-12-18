@@ -1,0 +1,23 @@
+- Recomiendo instalar la extension 'Better Comments' de Aaron Bond en el VSCODE para leer mejor los comentarios
+en otros colores que puse y entender mejor el codigo.
+
+
+- El diseño de las cards de la main page es distinta a la de los demas html porque comence a usar boostrap
+despues de haber terminado la main. Y las cards de bootstrap son muy distintas a las que hice yo con css.
+
+
+- El Carrito en la main (index.html) no funciona porque es la unica pagina que NO tiene bootstrap.
+(No habiamos llegado a esa clase aun cuando la hice). Asique esta inhabilitado el carrito. En las demas funciona.
+
+
+- La main solo tiene linkeado un css: 'styles.css'. Ya que fue hecha sin bootstrap.
+- Los demas html tienen linkeado 2 css:
+	#styles.css
+	#hombres.css (que se compila tambien desde /src/styles.scss)
+
+
+- En el script.js esta el codigo para abrir y cerrar el hamburguer menu solamente, que fue hecho sin bootstrap.
+
+
+
+

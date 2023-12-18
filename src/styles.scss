@@ -1,0 +1,40 @@
+//! Ancho de los botones del carousel.
+$carousel-control-width: 80px;
+
+//! Margin-bottom de los 'p' de las cards.
+$paragraph-margin-bottom: 1px;
+
+//! Border-radius del boton COMPRAR de las cards
+$btn-border-radius: 0px;
+
+//! Margin-top del card-body
+$card-spacer-y: 0.4rem;
+
+//! Fuente de la descripcion de las cards.
+.card-body p {
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+//! Styling al carousel
+.carousel-inner {
+    background-color: rgba(146, 146, 148, 0.3);
+    border: 1px solid rgb(229, 229, 229);
+    box-shadow: 1px 1px 30px rgba(140, 140, 140, 0.4);
+    padding: 20px 0;
+    margin-top: 3rem;
+    margin-bottom: 3rem; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
