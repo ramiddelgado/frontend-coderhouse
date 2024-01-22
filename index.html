@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RD Fitness</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/bootstrap/hombres.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
-    <div class="preheader"> <!--! (Pre)Header -->
+    <div class="preheader reubicar-pre"> <!--! (Pre)Header -->
         <p>ENVIOS GRATIS POR ENCIMA DE LOS $75.00 (USD)</p>
     </div>
 
-    <section id="header">  <!--! Header-->
-        <a href="./index.html"><img src="./imgs/rdlogo.png" class="logo" alt="Logo"></a>
+    <header  class="header reubicar-header">  <!--! Header-->
+        <a href="./index.html"><img src="./imgs/rdlogo.png" class="logo reubicar-logo" alt="Logo"></a>
 
         <div>
-            <ul id="navbar">
+            <ul id="navbar" class="reubicar-ul re-ul-2">
                 <li><a href="./pages/hombres.html">Hombres</a></li>
                 <li><a href="./pages/mujeres.html">Mujeres</a></li>
                 <li><a href="./pages/nuevo.html">Nuevo</a></li>
@@ -32,285 +34,261 @@
         <div id="mobile">
             <i id="bar" class="fas fa-outdent"></i>
         </div>
-    </section>
+    </header>
 
-    <section id="portada"> <!--! Portada-->
-        <p>Aprovecha los descuentos de hasta el 50%!</p>
-        <h1>Supera tus limites con estilo.</h1>
-        <h2>Haz que cada dia cuente.</h2>
-        <h3>Las mejores telas, los mejores diseños.</h3>
-        <button>Comprar</button>
-    </section>
 
-    <section id="servicios" class="section-padd"> <!--! Servicios-->
-        <div class="serv-box">
-            <img src="imgs/descuentos.png" alt="">
-            <h5>Grandes Descuentos</h5>
+    <main>
+        <div id="portada"> <!--! Portada-->
+            <p>Aprovecha los descuentos de hasta el 50%!</p>
+            <h1>Supera tus limites con estilo.</h1>
+            <h2>Haz que cada dia cuente.</h2>
+            <h3>Las mejores telas, los mejores diseños.</h3>
+            <button>Comprar</button>
         </div>
-        <div class="serv-box">
-            <img class="s247" src="imgs/247.png" alt="">
-            <h5>Soporte 24/7</h5>
-        </div>
-        <div class="serv-box">
-            <img class="envios" src="imgs/envios.png" alt="">
-            <h5>Envios Gratis</h5>
-        </div>
-        <div class="serv-box">
-            <img class="quality" src="imgs/quality.png" alt="">
-            <h5>Calidad Premium</h5>
-        </div>
-    </section>
-
-    <section id="productos" class="section-padd"> <!--! Productos-->
-        <h2>TODOS LOS PRODUCTOS</h2>
-        <p>Conoce toda nuestra colección</p>
-
-        <div class="prod-container">     <!-- Container de todos los productos -->
-            <div class="prod-box">     <!-- Box individual de cada producto -->
-                <img src="imgs/product1.jpg" alt="">
-                <div class="descripcion">
-                    <span>S/M/L/XL</span>
-                    <h5>Remera de compresion</h5>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$30.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        <div data-aos="fade-down" data-aos-duration="1500" id="servicios" class="section-padd"> <!--! Servicios-->
+            <div class="serv-box">
+                <img src="imgs/descuentos.png" alt="">
+                <h5>Grandes Descuentos</h5>
             </div>
-
-            <div class="prod-box">     <!-- Box individual de cada producto -->
-                <img src="imgs/product2.jpg" alt="">
-                <div class="descripcion">
-                    <span>40/48</span>
-                    <h5>Joggins Gris Claro</h5>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                      
-                    </div>
-                    <h4>$40.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <div class="serv-box">
+                <img class="s247" src="imgs/247.png" alt="">
+                <h5>Soporte 24/7</h5>
             </div>
-
-            <div class="prod-box">     <!-- Box individual de cada producto -->
-                <img src="imgs/product3.jpg" alt="">
-                <div class="descripcion">
-                    <span>S/M/L/XL</span>
-                    <h5>Conjunto Unisex</h5>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$65.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <div class="serv-box">
+                <img class="envios" src="imgs/envios.png" alt="">
+                <h5>Envios Gratis</h5>
             </div>
-
-            <div class="prod-box">     <!-- Box individual de cada producto -->
-                <img src="imgs/product4.jpg" alt="">
-                <div class="descripcion">
-                    <span>M/L/XL/XXL</span>
-                    <h5>Polo Blanco</h5>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$50.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="prod-box">     <!-- Box individual de cada producto -->
-                <img src="imgs/product5.jpg" alt="">
-                <div class="descripcion">
-                    <span>XS/S/M/L</span>
-                    <h5>Short Violeta</h5>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half"></i>
-
-                    </div>
-                    <h4>$35.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="prod-box">     <!-- Box individual de cada producto -->
-                <img src="imgs/product6.jpg" alt="">
-                <div class="descripcion">
-                    <span>XS/S/M</span>
-                    <h5>Top Verde Lima</h5>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half"></i>
-                    </div>
-                    <h4>$55.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="prod-box">     <!-- Box individual de cada producto -->
-                <img src="imgs/product7.jpg" alt="">
-                <div class="descripcion">
-                    <span>S/M/XL/XXL</span>
-                    <h5>Pantalones Estampados</h5>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$60.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="prod-box">     <!-- Box individual de cada producto -->
-                <img src="imgs/product8.jpg" alt="">
-                <div class="descripcion">
-                    <span>S/M/L</span>
-                    <h5>Short Rosa</h5>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        
-                    </div>
-                    <h4>$45.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="prod-box">     <!-- Box individual de cada producto -->
-                <img src="imgs/product9.jpg" alt="">
-                <div class="descripcion">
-                    <span>OS</span>
-                    <h5>Gorra LA</h5>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$25.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="prod-box">     <!-- Box individual de cada producto -->
-                <img src="imgs/product10.jpg" alt="">
-                <div class="descripcion">
-                    <span>S/M</span>
-                    <h5>Top Cuello Angosto</h5>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$50.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="prod-box">     <!-- Box individual de cada producto -->
-                <img src="imgs/product11.jpg" alt="">
-                <div class="descripcion">
-                    <span>S/M/L/XL/XXL</span>
-                    <h5>Buzo Liso</h5>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                       
-                    </div>
-                    <h4>$80.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="prod-box">     <!-- Box individual de cada producto -->
-                <img src="imgs/product12.jpg" alt="">
-                <div class="descripcion">
-                    <span>OS</span>
-                    <h5>Campera Peluche</h5>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$120.00</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <div class="serv-box">
+                <img class="quality" src="imgs/quality.png" alt="">
+                <h5>Calidad Premium</h5>
             </div>
         </div>
-
-        <a href="#"><button class="vertodos">Ver Todos</button></a>
+        <div id="productos" class="section-padd"> <!--! Productos-->
+            <h2 data-aos="fade-left" data-aos-duration="1200">TODOS LOS PRODUCTOS</h2>
+            <p data-aos="fade-left" data-aos-duration="1200">Conoce toda nuestra colección</p>
+            <div class="prod-container">     <!-- Container de todos los productos -->
+                <div class="prod-box">     <!-- Box individual de cada producto -->
+                    <img src="imgs/product1.jpg" alt="">
+                    <div class="descripcion">
+                        <span>S/M/L/XL</span>
+                        <h5>Remera de compresion</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$30.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="prod-box">     <!-- Box individual de cada producto -->
+                    <img src="imgs/product2.jpg" alt="">
+                    <div class="descripcion">
+                        <span>40/48</span>
+                        <h5>Joggins Gris Claro</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
         
-    </section>
-
-    <div class="separador"></div>
-
-    <section id="banners" class="section-padd"> <!--! Banners (3) -->
-        <div class="banner-box">
-            <h3>Explora los ultimos ingresos y tendencias</h3>
-            <button>Nuevos Productos</button>
+                        </div>
+                        <h4>$40.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="prod-box">     <!-- Box individual de cada producto -->
+                    <img src="imgs/product3.jpg" alt="">
+                    <div class="descripcion">
+                        <span>S/M/L/XL</span>
+                        <h5>Conjunto Unisex</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$65.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="prod-box">     <!-- Box individual de cada producto -->
+                    <img src="imgs/product4.jpg" alt="">
+                    <div class="descripcion">
+                        <span>M/L/XL/XXL</span>
+                        <h5>Polo Blanco</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$50.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="prod-box">     <!-- Box individual de cada producto -->
+                    <img src="imgs/product5.jpg" alt="">
+                    <div class="descripcion">
+                        <span>XS/S/M/L</span>
+                        <h5>Short Violeta</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                        <h4>$35.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="prod-box">     <!-- Box individual de cada producto -->
+                    <img src="imgs/product6.jpg" alt="">
+                    <div class="descripcion">
+                        <span>XS/S/M</span>
+                        <h5>Top Verde Lima</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                        <h4>$55.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="prod-box">     <!-- Box individual de cada producto -->
+                    <img src="imgs/product7.jpg" alt="">
+                    <div class="descripcion">
+                        <span>S/M/XL/XXL</span>
+                        <h5>Pantalones Estampados</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$60.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="prod-box">     <!-- Box individual de cada producto -->
+                    <img src="imgs/product8.jpg" alt="">
+                    <div class="descripcion">
+                        <span>S/M/L</span>
+                        <h5>Short Rosa</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+        
+                        </div>
+                        <h4>$45.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="prod-box">     <!-- Box individual de cada producto -->
+                    <img src="imgs/product9.jpg" alt="">
+                    <div class="descripcion">
+                        <span>OS</span>
+                        <h5>Gorra LA</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$25.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="prod-box">     <!-- Box individual de cada producto -->
+                    <img src="imgs/product10.jpg" alt="">
+                    <div class="descripcion">
+                        <span>S/M</span>
+                        <h5>Top Cuello Angosto</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$50.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="prod-box">     <!-- Box individual de cada producto -->
+                    <img src="imgs/product11.jpg" alt="">
+                    <div class="descripcion">
+                        <span>S/M/L/XL/XXL</span>
+                        <h5>Buzo Liso</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+        
+                        </div>
+                        <h4>$80.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="prod-box">     <!-- Box individual de cada producto -->
+                    <img src="imgs/product12.jpg" alt="">
+                    <div class="descripcion">
+                        <span>OS</span>
+                        <h5>Campera Peluche</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$120.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            </div>
+            <a href="#"><button class="vertodos">Ver Todos</button></a>
+        
         </div>
-
-        <div class="banner-box banner-box2">
-            <h3>Lo mas elegido por nuestros clientes</h3>
-            <button>Mas Vendidos</button>
+        <div class="separador"></div>
+        <div data-aos-duration="1500" class="banners section-padd"> <!--! Banners (3) -->
+            <div data-aos="flip-left" class="banner-box">
+                <h3>Explora los ultimos ingresos y tendencias</h3>
+                <button>Nuevos Productos</button>
+            </div>
+            <div data-aos="flip-left" data-aos-duration="1500"  class="banner-box banner-box2">
+                <h3>Lo mas elegido por nuestros clientes</h3>
+                <button>Mas Vendidos</button>
+            </div>
+            <div data-aos="flip-left" data-aos-duration="1500" class="banner-box banner-box3">
+                <h3>Complementa tu outfit con estilo</h3>
+                <button>Accesorios</button>
+            </div>
         </div>
-
-        <div class="banner-box banner-box3">
-            <h3>Complementa tu outfit con estilo</h3>
-            <button>Accesorios</button>
+        
+        <div id="aboutus" class="section-padd">  <!--! About Us -->
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Hace una década, nació nuestra marca de ropa fitness, RD Fitness, con la visión de inspirar a las personas a alcanzar sus metas de bienestar a través de la moda activa. Desde nuestros modestos inicios en un pequeño taller, hemos evolucionado hasta convertirnos en un referente en el mundo del fitness. La calidad y el diseño innovador de nuestras prendas nos han permitido ganar la confianza de atletas y entusiastas del ejercicio en todo el mundo.
+            RD Fitness ha sido pionera en la introducción de tejidos técnicos de alto rendimiento y cortes ergonómicos que fusionan comodidad y estilo. Nuestra primera línea, lanzada en 2013, revolucionó el mercado al ofrecer prendas que no solo potencian el rendimiento, sino que también reflejan la personalidad de quienes las usan.</p>
+        <img src="./imgs/aboutus.jpg" alt="">
+        <p>Con el tiempo, hemos expandido nuestra gama para incluir desde ropa de entrenamiento hasta elegantes prendas athleisure, manteniendo siempre el compromiso con la sostenibilidad y la ética en la producción. RD Fitness no solo viste cuerpos, sino que también promueve un estilo de vida activo y positivo, consolidándose como una marca que trasciende la moda para convertirse en un símbolo de bienestar y autenticidad.</p>
         </div>
-    </section>
-    
-    <section id="aboutus" class="section-padd">  <!--! About Us -->
-    <h2>Sobre Nosotros</h2>
+    </main>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, cupiditate impedit adipisci hic ullam itaque, officia nisi a maxime totam, amet eligendi. Voluptates quaerat eveniet numquam deleniti eaque eius impedit.
-    Harum amet culpa nam ex aliquid sequi alias dicta eos ad quam laudantium illo sit dolor, porro inventore eum modi vitae aut fuga quaerat quis expedita! Illum velit quibusdam a?
-    Quae reprehenderit ratione labore voluptatem nihil libero commodi, sit magnam molestiae. Obcaecati magnam laudantium, accusamus ab quo consequatur perferendis itaque cupiditate, eaque quia quasi corporis nemo voluptates ratione odio totam.
-    Quasi, nam consequatur et amet atque quis voluptatibus at est, rerum pariatur culpa, asperiores temporibus neque sit officia accusamus nulla maxime ipsam? Non, blanditiis odit voluptas provident modi eaque dolore.
-    Ad ex dicta veniam, cupiditate, voluptatum itaque recusandae perferendis neque eos quaerat velit a quis. Asperiores deserunt optio error esse quisquam, eligendi dolorem non quo voluptate exercitationem magnam, excepturi fugit.</p>
-
-    <img src="./imgs/aboutus.jpg" alt="">
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illo aliquid quibusdam nam earum laborum asperiores molestias porro provident enim est doloremque, expedita, quo beatae. Blanditiis, autem? Magni, consectetur dolores?
-        Optio asperiores earum voluptatibus! Ratione harum iste labore numquam vitae qui corrupti hic maiores, perspiciatis fugit eos commodi alias ex quidem ut sapiente repellat. Officiis ex unde sit est id!
-        A tempora nam mollitia error incidunt aut corporis labore nostrum accusamus similique quia, fugiat, odio dicta dolorum, quasi ea possimus enim neque atque vitae sint praesentium culpa quaerat. Quasi, eius!</p>
-    </section>
-
-    <footer class="section-padd">       <!--! Footer -->
+    <footer class="section-padd footer-hombres">       <!--! Footer -->
 
             <div class="col-container">
                 <div class="columna">
@@ -371,5 +349,8 @@
 
 
 <script src="script.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
