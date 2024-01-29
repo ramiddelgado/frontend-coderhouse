@@ -104,7 +104,7 @@
 }
 
 .re-ul-2 {
-  padding-left: 770px;
+  /* padding-left: 770px; */
   text-wrap: nowrap;
 }
 
@@ -557,10 +557,10 @@ footer {
   #portada {
       height: 70vh;
       padding-left: 0px;
-      background-position: top 0% right 8%;
+      background-position: top 0% right 50%;
   }
   #portada h1, h3 {
-      color: white;
+      color: rgba(0, 0, 0, 0.8);
   }
   #portada p {
       color: rgb(255, 255, 255);
@@ -1173,6 +1173,17 @@ margin: 30px;
       font-family: Spartan;
   }
 
+  #portada h3 {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  #portada>p, #portada>h1 {
+    visibility: hidden;
+  }
+
+  #portada h2, #portada h3 {
+    font-size: 1.5rem;
+  }
+
   .section-padd {
       padding: 120px 40px 40px 40px;
   }
@@ -1207,10 +1218,10 @@ margin: 30px;
       width: 300px;
   }
   .banners .banner-box2 {
-      background-image: url(../imgs/tp2.jpg);
+      background-image: url(../../imgs/tp2.jpg);
   }
   .banners .banner-box3 {
-      background-image: url(../imgs/tp3.jpg);
+      background-image: url(../../imgs/tp3.jpg);
   }
 
   #aboutus p {
@@ -1328,6 +1339,13 @@ margin: 30px;
     .hero-tres {
       background-position: 60% 50%;
     }
+
+    #portada h3 {
+      color: white;
+    }
+    #portada>p, #portada>h1 {
+      visibility: hidden;
+    }
     }
 
     @media only screen and (max-width: 450px) {
@@ -1340,6 +1358,13 @@ margin: 30px;
 
       .carousel-item .card {
         margin: 10px 0;
+      }
+
+      #portada h3 {
+        color: white;
+      }
+      #portada>p, #portada>h1 {
+        visibility: hidden;
       }
     }
 
@@ -1379,6 +1404,7 @@ margin: 30px;
     background-position: 90% 50%;
     color: azure;
   }
+  
 
   /* .text-b1-h1 {
     visibility: hidden;
@@ -1767,6 +1793,10 @@ margin: 30px;
     align-self: center;
     margin-bottom: 50px;
   }
+
+  #portada h3 {
+    color: rgba(0, 0, 0, 0.8);
+  }
 }
 
 /*! PAGE: MIPERFIL.HTML */
@@ -1854,6 +1884,10 @@ margin: 30px;
 @media only screen and (max-width: 800px) {
   .profile-container {
     flex-direction: column;
+  }
+  
+  #portada h3 {
+    color: rgba(247, 247, 247, 0.8);
   }
 }
 
