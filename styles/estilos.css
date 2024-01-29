@@ -1043,7 +1043,6 @@ footer .fila-container .fila2 {
 }
 .container-fluid-fit .hero-rdfit {
   max-width: 80rem;
-  margin: 0px auto;
   display: flex;
   position: relative;
 }
