@@ -1,0 +1,108 @@
+.profile-container {    /* contenedor general */
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+
+    // leftside
+    .profile-left {
+        display: flex;
+        width: 100%;
+        background-color: black;
+        
+        .pleft-texto {
+            width: 100%;
+
+            .pleft-bg {
+                background-image: url(../imgs/miperfil/pleft-bg.jpg);
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                display: flex;
+
+                .pleft-frases {
+                    padding: 4rem;
+
+                    p:first-child {
+                        color: rgb(187 188 188);
+                        font-size: 0.75rem;
+                      }
+                    p:nth-child(3) {
+                        color: white;
+                      }
+                    h2 {
+                        color: white;
+                        font-family: montserrat;
+                        font-weight: 700;
+                        font-size: 2.7rem;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        max-width: 60%;
+                      }
+                  }
+              }
+          }
+      }
+
+    //   rightside
+    .profile-right {
+        display: flex;
+        width: 100%;
+        background-color: #fff;
+
+        .login-container {
+            width: 100%;
+
+            a {
+                text-decoration: none;
+              }
+            .footer-perfil {
+                display: flex;
+                font-size: 0.75rem;
+                justify-content: center;
+
+                .derechos-perfil {
+                    color: gray;
+                    margin-right: 10px
+                  }
+
+                a {
+                    text-decoration: underline;
+                    color: red;
+                  }
+                a:visited {
+                    text-decoration: underline;
+                    color: red;
+                  }
+              }
+          }
+      }
+  }
+
+//mediaquerys
+//mobile
+@media only screen and (max-width: 800px) {
+    .profile-container {
+      flex-direction: column;
+    }
+    
+    #portada h3 {
+      color: rgba(247, 247, 247, 0.8);
+    }
+  }
+  
+  .fa, .fa-shopping-cart {
+    color: rgb(0, 56, 130);
+  }
+
+//random fix
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+
+    .fa, .fa-shopping-cart {
+      color: rgb(0, 56, 130);} 
+    }
+
+

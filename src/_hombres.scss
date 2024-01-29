@@ -1,0 +1,56 @@
+//! heros hombres.html
+
+.hero-uno {
+    background-image: url(../imgs/heros/hero-h-1.jpg);
+    height: 60vh;
+    background-size: cover;
+}
+
+.hero-dos {
+    background-image: url(../imgs/heros/hero-h-2.jpg);
+    height: 60vh;
+    background-size: cover;
+    color:azure;
+}
+
+.hero-tres {
+    background-image: url(../imgs/heros/hero-h-3.jpg);
+    height: 60vh;
+    background-size: cover;
+    color: white;
+}
+.hero-des {
+    height: 100%;
+    /* padding-left: 150px; */
+}
+
+// mediaquerys
+// tablets
+
+@media only screen and (max-width: 1200px) {
+.hero-uno {
+      background-position: 60% 50%;
+      color: azure;
+    }
+.hero-dos {
+      background-position: 80% 50%;
+    }
+.hero-tres {
+      background-position: 60% 50%;
+    }
+}
+
+// mobile
+@media only screen and (max-width: 450px) {
+.card-wrapper {
+   flex-direction: column;
+}
+.carousel-item {
+    .container-sm {
+        align-items: center;
+       }
+    .card {
+        margin: 10px 0;
+      }
+}
+}

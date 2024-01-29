@@ -1,0 +1,383 @@
+.container-fluid-fit {
+    background-color: black;
+    /* height: 65vh; */
+    background-image: url(../imgs/rdfit/rdfit-banner.jpg);
+    padding: 0px 10rem;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+
+    .hero-rdfit {
+        max-width: 80rem;
+        margin: 0px auto;
+        display: flex;
+        position: relative;
+
+        .text-content {
+            position: relative;
+            z-index: 2;
+            max-width: 35rem;
+            font-family: montserrat;
+            margin: 15% 0;
+
+            p:first-child {
+                color: rgb(69, 180, 231);
+                font-weight: 700;
+              }
+
+            p:nth-child(3) {
+                color: white;
+                max-width: 300px;
+              }
+
+            h1 {
+                color: white;
+                font-size: 2rem;
+                font-weight: 700;
+                text-shadow: 0px 0px 5px white;
+              }
+
+            i {
+                color: rgba(69, 180, 231, 0.6);
+              }
+
+            span {
+                color: white;
+                font-size: 0.7rem;
+              }
+
+            .time-banner {
+                margin-top: 1rem;
+              }
+          }
+      }
+  }
+
+//   articulo debajo del banner
+.blog-container {
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+    padding: 4rem 6rem;
+    align-items: flex-start;
+    /* flex-shrink: 0; */
+    /* margin: 0; */
+
+    .blog-content {
+        display: flex;
+        flex-direction: column;
+        /* flex-shrink: 0; */
+        align-self: center;
+        background-color: #fff;
+        max-width: 45rem;
+
+        img {
+            width: 100%;
+            max-height: 100%;
+          }
+
+        .art-left {
+            width: 100%;
+            padding: 2rem 2rem 0px;
+            /* flex-shrink: 0; */
+            font-family: montserrat;
+
+            h4 {
+                font-size: 1.2rem;
+              }
+            .p-dispositivos {
+                font-weight: bold;
+                margin: 12px 0;
+              }
+            h2 {
+                margin-top: 22px;
+                font-weight: bold;
+              }
+            .p-general {
+                font-size: 1rem;
+                line-height: 2rem;
+                color: rgb(68, 68, 68);
+              }
+            img {
+                margin: 25px 0 10px 0;
+              }
+            h3 {
+                margin-bottom: 20px;
+                font-size: 1.35rem;
+                text-align: center;
+              }
+            .p-g-2 {
+                margin: 20px 0;
+              }
+            button {
+                padding: 5px 20px;
+                border: none;
+                background-color: black;
+                color: white;
+                font-weight: 600;
+                border-radius: 25px;
+                border: 1px solid black;
+              }
+            button:hover {
+                /* background-color: rgb(42, 42, 42); */
+                background-color: white;
+                border: 1px solid black;
+                color: black;
+              }
+            i {
+                color: white;
+                padding-right: 5px;
+              }
+            i:hover {
+                color: black;
+              }
+          }
+          .art-left:last-child {
+            margin-bottom: 50px;
+          }
+      }
+  }
+
+//  side articles
+
+.blog-articles {
+    display: flex;
+    flex-direction: column;
+    top: 8rem;
+    position: sticky;
+    max-width: 30rem;
+    width: 100%;
+    margin-left: 2.5rem;
+    align-self: auto;
+    font-family: montserrat;
+
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding-left: 0;
+      }
+    h4 {
+        background-color: #fff;
+        color: black;
+        text-align: center;
+        line-height: 1.8rem;
+        font-size: 1.3rem;
+        padding: 1rem 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        margin-bottom: 0px;
+      }
+    .art-rows {
+        background-color: #fff;
+        border-top: 0.1rem solid rgb(187, 188, 188);
+        display: flex;
+        flex: 1 1 0%;
+
+        .art-pic-1 {
+            background-image: url(../imgs/rdfit/artpic1.jpg);
+            background-size: cover;
+            background-position: 40% 50%;
+            flex: 1 1 0%;
+            max-width: 10rem;
+            width: 10rem;
+            position: relative;
+          }
+        .art-pic-2 {
+            background-image: url(../imgs/rdfit/artpic2.jpg);
+            background-size: cover;
+            background-position: 40% 50%;
+            flex: 1 1 0%;
+            max-width: 10rem;
+            width: 10rem;
+            position: relative;
+          }
+        .art-pic-3 {
+            background-image: url(../imgs/rdfit/artpic3.jpg);
+            background-size: cover;
+            background-position: 40% 50%;
+            flex: 1 1 0%;
+            max-width: 10rem;
+            width: 10rem;
+            position: relative;
+          }
+        .art-info-1 {
+            flex: 1 1 0%;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            -webkit-box-pack: center;
+
+            a{
+                color: rgb(0, 0, 0);
+                font-size: 0.9rem;
+                line-height: 1.5;
+                text-decoration: none;
+            }
+            h5 {
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 1.8rem;
+                height: 3.6rem;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                margin-bottom: 0.5rem;
+                font-size: 1rem;
+            }
+            p {
+                color: rgb(68, 68, 68);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 1.5rem;
+                height: 4.4rem;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                margin-bottom: 1rem;
+            }
+        }
+
+
+        .art-info-2 {
+            flex: 1 1 0%;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            -webkit-box-pack: center;
+
+            a{
+                color: rgb(0, 0, 0);
+                font-size: 0.9rem;
+                line-height: 1.5;
+                text-decoration: none;
+            }
+            h5 {
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 1.8rem;
+                height: 3.6rem;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                margin-bottom: 0.5rem;
+                font-size: 1rem;
+            }
+            p {
+                color: rgb(68, 68, 68);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 1.5rem;
+                height: 4.4rem;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                margin-bottom: 1rem;
+            }
+        }
+
+
+        .art-info-3 {
+            flex: 1 1 0%;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            -webkit-box-pack: center;
+
+            a{
+                color: rgb(0, 0, 0);
+                font-size: 0.9rem;
+                line-height: 1.5;
+                text-decoration: none;
+            }
+            h5 {
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 1.8rem;
+                height: 3.6rem;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                margin-bottom: 0.5rem;
+                font-size: 1rem;
+            }
+            p {
+                color: rgb(68, 68, 68);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 1.5rem;
+                height: 4.4rem;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                margin-bottom: 1rem;
+            }
+        }
+      }
+  }
+
+
+//mediaquerys
+//mobile & tablets
+@media only screen and (max-width: 1300px) {
+    .hero-rdfit {
+      margin: 0 60px;
+      max-width: 100rem;
+    }
+  
+    .text-content p:nth-child(3) {
+      max-width: 300px;
+    }
+  
+    .blog-container {
+      flex-direction: column;
+      padding: 0rem;
+    }
+  
+    .blog-articles {
+      margin-top: 50px;
+      margin-left: 0rem;
+      width: unset;
+      
+    }
+  
+    .blog-content {
+      margin-top: 50px;
+    }
+  
+    .container-fluid-fit {
+      padding: 0rem;
+    }
+  }
+// fixes tablets
+  @media only screen and (min-width: 768px) and (max-width:1299px) {
+
+    .blog-container {
+      width: 100%;
+    }
+  
+    .blog-articles {
+      justify-content: center;
+      justify-self: center;
+      align-self: center;
+      margin-bottom: 50px;
+    }
+  
+    #portada h3 {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  

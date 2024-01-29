@@ -1,0 +1,31 @@
+.hero-uno-m {
+    background-image: url(../imgs/heros/hero-m-1.jpg);
+    height: 60vh;
+    background-size: cover;
+}
+.hero-dos-m {
+    background-image: url(../imgs/heros/hero-m-2.jpg);
+    height: 60vh;
+    background-size: cover;
+    color:azure;
+}
+.hero-tres-m {
+    background-image: url(../imgs/heros/hero-m-3.jpg);
+    height: 60vh;
+    background-size: cover;
+    color: rgba(33, 37, 41, 0.75);    /*Color del text-muted de bst*/
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero-uno-m {
+        background-position: 60% 50%;
+        color: azure;
+      }
+      .hero-dos-m {
+        background-position: 80% 50%;
+      }
+      .hero-tres-m {
+        background-position: 90% 50%;
+        color: azure;
+      }
+}
