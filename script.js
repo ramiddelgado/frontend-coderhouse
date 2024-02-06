@@ -1,7 +1,7 @@
 
-const bar = document.getElementById('bar');
-const close = document.getElementById('close');
-const nav = document.getElementById('navbar');
+const bar = document.querySelector('.bar');
+const close = document.querySelector('.close');
+const nav = document.querySelector('.navbar');
 
 
 if (bar) {          //! Abrir navbar

@@ -41,10 +41,13 @@
   position: sticky;
   top: 0;
 }
+.header .reubicar-ul {
+  padding-top: 17px;
+}
 .header .logo {
   width: 80px;
 }
-.header #navbar {
+.header .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,29 +56,29 @@
   color: rgb(0, 25, 99);
   /* letter-spacing: 1px; */
 }
-.header #navbar #close {
+.header .navbar .close {
   display: none;
 }
-.header #navbar li {
+.header .navbar li {
   list-style-type: none;
   padding: 0 20px;
   position: relative;
 }
-.header #navbar li a {
+.header .navbar li a {
   text-decoration: none;
   font-size: 16px;
   transition: 0.3s ease;
   color: rgb(0, 25, 99);
 }
-.header #navbar li a:visited {
+.header .navbar li a:visited {
   color: rgb(0, 56, 130);
 }
-.header #navbar li a:hover,
-.header #navbar li a.active {
+.header .navbar li a:hover,
+.header .navbar li a.active {
   color: rgb(100, 158, 221);
 }
-.header #navbar li a.active::after,
-.header #navbar li a:hover::after {
+.header .navbar li a.active::after,
+.header .navbar li a:hover::after {
   content: "";
   width: 30%;
   height: 1.5px;
@@ -84,11 +87,11 @@
   bottom: -4px;
   left: 20px;
 }
-.header #mobile { /*Para ocultar el menu mobile*/
+.header .mobile { /*Para ocultar el menu mobile*/
   display: none;
 }
 
-#portada {
+.portada {
   background-image: url(../imgs/portada2-merch.jpg);
   height: 60vh;
   width: 100%;
@@ -103,20 +106,22 @@
   line-height: 32px;
   /* text-transform: uppercase; */
 }
-#portada p {
+.portada p {
   font-style: oblique;
-  color: grey;
+  color: rgb(12, 36, 145);
 }
-#portada h2, #portada .h2 {
-  color: rgb(0, 56, 130);
+.portada h2, .portada .h2 {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
-#portada h1, #portada .h1, #portada h3, #portada .h3 {
-  color: rgb(62, 62, 62);
+.portada h1, .portada .h1, .portada h3, .portada .h3 {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
-#portada h3, #portada .h3 {
+.portada h3, .portada .h3 {
   font-weight: 400;
 }
-#portada button {
+.portada button {
   padding: 1px 18px;
   background-color: rgba(28, 60, 147, 0.839);
   border: 1px solid rgba(28, 60, 147, 0.839);
@@ -135,24 +140,26 @@
   box-shadow: 1px 1px 1px #656565;
   transition: 0.3s;
 }
-#portada button:hover {
+.portada button:hover {
   background-color: white;
   color: rgba(28, 60, 147, 0.839);
   box-shadow: 1px 1px 1px #636363;
+  font-weight: 600;
 }
 
 .section-padd { /* padding generico a las sections*/
   padding: 120px 100px 40px 100px;
   font-family: Spartan;
+  overflow: hidden;
 }
 
-#servicios {
+.servicios {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-#servicios .serv-box { /* caja individual de servicio (1/4)*/
+.servicios .serv-box { /* caja individual de servicio (1/4)*/
   width: 220px;
   height: 220px;
   text-align: center;
@@ -162,35 +169,36 @@
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
   /* ajustes a los 3 servicios restantes */
 }
-#servicios .serv-box h5, #servicios .serv-box .h5 {
+.servicios .serv-box h5, .servicios .serv-box .h5 {
   margin-top: -20px;
   padding: 15px 0px 10px 0px;
   color: rgb(0, 20, 75);
   font-size: 0.9rem;
 }
-#servicios .serv-box img {
+.servicios .serv-box img {
   width: 100%;
   margin-top: -10px;
 }
-#servicios .serv-box .s247 {
+.servicios .serv-box .s247 {
   max-width: 55%;
 }
-#servicios .serv-box .envios {
+.servicios .serv-box .envios {
   max-width: 90%;
 }
-#servicios .serv-box .quality {
+.servicios .serv-box .quality {
   max-width: 40%;
   margin-bottom: 4px;
 }
 
-#productos {
+.productos {
   text-align: center;
+  overflow: hidden;
 }
-#productos .prod-box {
+.productos .prod-box {
   width: 20%;
   min-width: 250px;
   padding: 10px 15px;
-  border: 1px solid #cce7d0;
+  border: 1px solid #ccdde7;
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
@@ -198,35 +206,35 @@
   transition: 0.2s ease;
   position: relative;
 }
-#productos .prod-box img {
+.productos .prod-box img {
   width: 100%;
   border-radius: 20px;
 }
-#productos .prod-box .descripcion {
+.productos .prod-box .descripcion {
   text-align: start;
   padding: 10px 0px;
 }
-#productos .prod-box .descripcion span {
+.productos .prod-box .descripcion span {
   color: #606063;
   font-size: 13px;
 }
-#productos .prod-box .descripcion h5, #productos .prod-box .descripcion .h5 {
+.productos .prod-box .descripcion h5, .productos .prod-box .descripcion .h5 {
   padding: 6px 0 1px 0;
   color: #1a1a1a;
   font-size: 1rem;
   font-weight: 600;
 }
-#productos .prod-box .descripcion i { /* Stars */
+.productos .prod-box .descripcion i { /* Stars */
   font-size: 10px;
   color: rgb(243, 181, 25);
 }
-#productos .prod-box .descripcion h4, #productos .prod-box .descripcion .h4 { /* Precio */
+.productos .prod-box .descripcion h4, .productos .prod-box .descripcion .h4 { /* Precio */
   padding-top: 8px;
   font-size: 0.9rem;
   font-weight: 500;
   color: rgb(0, 28, 105);
 }
-#productos .prod-box .cart { /* Boton Carrito (icon)*/
+.productos .prod-box .cart { /* Boton Carrito (icon)*/
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -239,14 +247,14 @@
   bottom: 20px;
   right: 20px;
 }
-#productos .prod-box .cart:hover {
+.productos .prod-box .cart:hover {
   color: rgb(134, 186, 238);
   box-shadow: 0 5px 15px rgba(92, 155, 182, 0.3);
 }
-#productos .prod-box:hover {
+.productos .prod-box:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
 }
-#productos .prod-container {
+.productos .prod-container {
   display: flex;
   /* justify-content: space-between; */
   flex-wrap: wrap;
@@ -254,12 +262,13 @@
   justify-content: center;
   margin: 25px 85px;
 }
-#productos .vertodos { /* Boton ver todos*/
+.productos .vertodos { /* Boton ver todos*/
   padding: 5px 10px;
   margin-top: 50px;
   background-color: rgb(0, 21, 61);
   color: white;
   border-radius: 5px;
+  border: none;
   font-weight: 600;
   font-size: 0.9rem;
   cursor: pointer;
@@ -288,7 +297,7 @@
   background-image: url(../imgs/tp1.jpg);
   min-width: 300px;
   width: 400px;
-  height: 60vh;
+  height: 70vh;
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -327,26 +336,29 @@
   background-image: url(../imgs/tp3.jpg);
 }
 
-#aboutus {
+.aboutus {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 50px;
 }
-#aboutus p {
+.aboutus p {
   width: 1000px;
   text-align: justify;
   line-height: 30px;
   color: #1a1a1a;
 }
-#aboutus img {
+.aboutus img {
   width: 800px;
 }
 
 footer {
   border-top: 1px solid #d5d5d5;
   margin-top: 100px;
+  z-index: 150;
+  position: sticky;
+  background-color: white;
 }
 footer .col-container {
   display: flex;
@@ -433,7 +445,18 @@ footer .fila-container .fila2 {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1200px) {
-  #navbar { /*? Menu Hamburguesa*/
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 35px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    position: sticky;
+    top: 0;
+  }
+  .header .navbar { /*? Menu Hamburguesa*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -451,19 +474,16 @@ footer .fila-container .fila2 {
     padding: 80px 0 0 10px;
     transition: 0.4s;
   }
-  #navbar li {
+  .header .navbar li {
     margin-bottom: 25px;
   }
-  #navbar li a {
+  .header .navbar li a {
     text-decoration: none;
     font-size: 18px;
     letter-spacing: 1px;
     transition: 0.3s ease;
   }
-  #navbar .active {
-    right: 0px;
-  }
-  #navbar #close { /*? cerrar navbar*/
+  .header .navbar .close { /*? cerrar navbar*/
     display: initial;
     position: absolute;
     top: 30px;
@@ -471,30 +491,30 @@ footer .fila-container .fila2 {
     color: rgb(0, 56, 130);
     font-size: 24px;
   }
-  #mobile {
+  .header .navbar.active {
+    right: 0px;
+  }
+  .header .mobile {
     display: flex;
     align-items: center;
   }
-  #mobile i {
+  .header .mobile i {
     font-size: 24px;
     color: rgb(6, 31, 102);
   }
-  #portada {
+  .portada {
     height: 70vh;
     padding-left: 0px;
-    background-position: top 0% right 50%;
+    background-position: top 0% right 30%;
   }
-  #portada h3, #portada .h3 {
-    color: white;
-  }
-  #portada p, #portada h1, #portada .h1 {
+  .portada p, .portada h1, .portada .h1 {
     visibility: hidden;
   }
-  #portada h2, #portada .h2 {
-    color: rgb(109, 150, 211);
+  .portada h2, .portada .h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.656);
   }
-  #portada button {
-    padding: 10px 18px;
+  .portada button {
     background-color: rgba(28, 60, 147, 0.839);
     border-radius: 15px;
     background-image: none;
@@ -512,10 +532,10 @@ footer .fila-container .fila2 {
   .section-padd {
     padding: 40px 10px;
   }
-  #servicios .serv-box {
+  .servicios .serv-box {
     margin: 30px;
   }
-  #productos .prod-container {
+  .productos .prod-container {
     display: flex;
     /* justify-content: space-between; */
     flex-wrap: wrap;
@@ -523,11 +543,11 @@ footer .fila-container .fila2 {
     justify-content: center;
     margin: 25px 40px;
   }
-  #productos .prod-box .cart {
+  .productos .prod-box .cart {
     bottom: 10px;
     right: 10px;
   }
-  #productos .prod-box .descripcion {
+  .productos .prod-box .descripcion {
     margin-bottom: 15px;
   }
   .banners .banner-box {
@@ -540,10 +560,10 @@ footer .fila-container .fila2 {
   .banners .banner-box3 {
     background-image: url(../imgs/tp3.jpg);
   }
-  #aboutus p {
+  .aboutus p {
     width: 460px;
   }
-  #aboutus img {
+  .aboutus img {
     width: 460px;
   }
   .col-container {
@@ -555,6 +575,7 @@ footer .fila-container .fila2 {
   .col-container .apps {
     display: flex;
     gap: 15px;
+    margin-left: -15px;
   }
   .col-container .columna {
     align-items: stretch;
@@ -593,7 +614,7 @@ footer .fila-container .fila2 {
     position: sticky;
     top: 0;
   }
-  .header #navbar { /*? Menu Hamburguesa*/
+  .header .navbar { /*? Menu Hamburguesa*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -611,19 +632,16 @@ footer .fila-container .fila2 {
     padding: 80px 0 0 10px;
     transition: 0.4s;
   }
-  .header #navbar li {
+  .header .navbar li {
     margin-bottom: 25px;
   }
-  .header #navbar li a {
+  .header .navbar li a {
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 1px;
     transition: 0.3s ease;
   }
-  .header #navbar .active {
-    right: 0px;
-  }
-  .header #navbar #close { /*? cerrar navbar*/
+  .header .navbar .close { /*? cerrar navbar*/
     display: initial;
     position: absolute;
     top: 30px;
@@ -631,31 +649,36 @@ footer .fila-container .fila2 {
     color: rgb(0, 56, 130);
     font-size: 24px;
   }
-  .header #mobile {
+  .header .navbar.active {
+    right: 0px;
+  }
+  .header .mobile {
     display: flex;
     align-items: center;
   }
-  .header #mobile i {
+  .header .mobile i {
     font-size: 24px;
     color: rgb(6, 31, 102);
   }
-  #portada {
+  .portada {
     height: 60vh;
     padding-left: 0px;
-    background-position: top 0% right 13%;
+    background-position: top 0% right 30%;
   }
-  #portada h3, #portada .h3 {
+  .portada h3, .portada .h3 {
     color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.656);
   }
-  #portada p, #portada h1, #portada .h1 {
+  .portada p, .portada h1, .portada .h1 {
     visibility: hidden;
   }
-  #portada h2, #portada .h2 {
-    color: rgb(109, 150, 211);
+  .portada h2, .portada .h2 {
+    color: rgb(255, 255, 255);
     font-size: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.656);
   }
-  #portada button {
-    padding: 10px 18px;
+  .portada button {
     background-color: rgba(28, 60, 147, 0.839);
     border-radius: 15px;
     background-image: none;
@@ -673,10 +696,10 @@ footer .fila-container .fila2 {
   .section-padd {
     padding: 40px 10px;
   }
-  #servicios .serv-box {
+  .servicios .serv-box {
     margin: 30px;
   }
-  #productos .prod-container {
+  .productos .prod-container {
     display: flex;
     /* justify-content: space-between; */
     flex-wrap: wrap;
@@ -684,7 +707,7 @@ footer .fila-container .fila2 {
     justify-content: center;
     margin: 25px 5px;
   }
-  #productos .prod-box {
+  .productos .prod-box {
     width: 20%;
     min-width: 150px;
     padding: 10px 15px;
@@ -696,7 +719,7 @@ footer .fila-container .fila2 {
     transition: 0.2s ease;
     position: relative;
   }
-  #productos .prod-box .cart {
+  .productos .prod-box .cart {
     width: 42px;
     height: 42px;
     line-height: 42px;
@@ -709,7 +732,7 @@ footer .fila-container .fila2 {
     bottom: 10px;
     right: 10px;
   }
-  #productos .prod-box .descripcion {
+  .productos .prod-box .descripcion {
     margin-bottom: 15px;
   }
   .banners .banner-box {
@@ -722,11 +745,11 @@ footer .fila-container .fila2 {
   .banners .banner-box3 {
     background-image: url(../imgs/tp3.jpg);
   }
-  #aboutus p {
+  .aboutus p {
     width: 320px;
     font-size: 0.8rem;
   }
-  #aboutus img {
+  .aboutus img {
     width: 320px;
   }
   .col-container {
@@ -734,6 +757,7 @@ footer .fila-container .fila2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    margin-left: 20%;
   }
   .col-container .apps {
     display: flex;
@@ -767,13 +791,12 @@ footer .fila-container .fila2 {
   .section-padd {
     padding: 120px 40px 40px 40px;
   }
-  #portada {
+  .portada {
     height: 60vh;
     padding-left: 0px;
     background-position: top 0% right 45%;
   }
-  #portada button {
-    padding: 10px 18px;
+  .portada button {
     background-color: rgba(28, 60, 147, 0.839);
     border-radius: 15px;
     background-image: none;
@@ -788,22 +811,29 @@ footer .fila-container .fila2 {
     cursor: pointer;
     font-family: Spartan;
   }
-  #portada h3, #portada .h3 {
-    color: rgba(0, 0, 0, 0.5);
+  .portada button:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgba(28, 60, 147, 0.839);
+    box-shadow: 1px 1px 1px #636363;
+    font-weight: 700;
   }
-  #portada p, #portada h1, #portada .h1 {
+  .portada h3, .portada .h3 {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.656);
+  }
+  .portada p, .portada h1, .portada .h1 {
     visibility: hidden;
   }
-  #portada h2, #portada .h2, #portada h3, #portada .h3 {
+  .portada h2, .portada .h2, .portada h3, .portada .h3 {
     font-size: 1.5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.656);
   }
-  #servicios {
+  .servicios {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  #servicios .serv-box {
+  .servicios .serv-box {
     width: 270px;
     height: 270px;
     text-align: center;
@@ -815,7 +845,7 @@ footer .fila-container .fila2 {
   }
   .banners .banner-box {
     margin: 20px 20px;
-    width: 300px;
+    width: 350px;
   }
   .banners .banner-box2 {
     background-image: url(../imgs/tp2.jpg);
@@ -823,11 +853,11 @@ footer .fila-container .fila2 {
   .banners .banner-box3 {
     background-image: url(../imgs/tp3.jpg);
   }
-  #aboutus p {
+  .aboutus p {
     width: 800px;
     font-size: 0.8rem;
   }
-  #aboutus img {
+  .aboutus img {
     width: 800px;
   }
 }
@@ -857,22 +887,12 @@ footer .fila-container .fila2 {
   background-color: #fff;
 }
 
-.reubicar-ul {
-  padding-top: 17px;
-}
-
 .reubicar-header {
   height: 83px;
 }
 
 .reubicar-logo {
   margin-bottom: 5px;
-}
-
-.footer-hombres {
-  margin-top: 10vh;
-  position: static; /* Esto y bgc:fff para tapar la sidebar con index negativo. Si no, se superponian (en nuevo.html). Le quiero dar prioridad al footer*/
-  background-color: #fff;
 }
 
 .fab, .far {
@@ -924,6 +944,12 @@ footer .fila-container .fila2 {
     background-position: 60% 50%;
     color: azure;
   }
+  .hero-uno p:nth-child(1) {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  .hero-uno p:nth-child(2) {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
   .hero-dos {
     background-position: 80% 50%;
   }
@@ -967,36 +993,43 @@ footer .fila-container .fila2 {
     background-position: 60% 50%;
     color: azure;
   }
+  .hero-uno-m p:nth-child(1) {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
   .hero-dos-m {
     background-position: 80% 50%;
+  }
+  .hero-dos-m p:nth-child(1) {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  .hero-dos-m p:nth-child(2) {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   }
   .hero-tres-m {
     background-position: 90% 50%;
     color: azure;
   }
+  .hero-tres-m p:nth-child(1) {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  .hero-tres-m p:nth-child(2) {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
 }
 .sidebar {
   position: fixed;
-  top: 86px;
+  top: 115px;
   bottom: 0;
   left: 0;
-  padding: 50px 0 0;
+  padding: 15px 0 0;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05), 0 2px 10px 0 rgba(0, 0, 0, 0.05);
   width: 320px;
-  z-index: -50;
+  overflow-y: auto;
+  z-index: 149;
 }
 .sidebar .active {
   border-radius: 5px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-.sidebar-sticky {
-  position: relative;
-  top: 0;
-  height: calc(100vh - 48px);
-  padding-top: 0.5rem;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 .list-group-item span {
@@ -1371,9 +1404,6 @@ footer .fila-container .fila2 {
     align-self: center;
     margin-bottom: 50px;
   }
-  #portada h3, #portada .h3 {
-    color: rgba(0, 0, 0, 0.8);
-  }
 }
 .profile-container { /* contenedor general */
   display: flex;
@@ -1451,9 +1481,6 @@ footer .fila-container .fila2 {
   .profile-container {
     flex-direction: column;
   }
-  #portada h3, #portada .h3 {
-    color: rgba(247, 247, 247, 0.8);
-  }
 }
 .fa, .fa-shopping-cart {
   color: rgb(0, 56, 130);
@@ -1492,20 +1519,25 @@ footer .fila-container .fila2 {
   margin-top: 0;
   margin-bottom: 15px;
 }
-.carrito-content button {
+.carrito-content a {
+  text-decoration: none;
+}
+.carrito-content a button {
   margin: 5px 0;
   border-radius: 5.6rem;
+  border: 1px solid black;
   background-color: black;
   color: white;
-  padding: 8px 8px;
+  padding: 8px 16px;
   font-family: montserrat;
   font-weight: 700;
   font-size: 0.88rem;
   word-spacing: 0.2rem;
 }
-.carrito-content button:hover {
+.carrito-content a button:hover {
   background-color: white;
   color: black;
+  transition: 0.25s;
 }
 
 /*!

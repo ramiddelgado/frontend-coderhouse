@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RD Fitness</title>
-    <link rel="stylesheet" href="./styles/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">  
+    <link rel="stylesheet" href="./styles/estilos.css">
 </head>
 <body>
 
@@ -19,33 +20,58 @@
     <header  class="header reubicar-header">  <!--! Header-->
         <a href="./index.html"><img src="./imgs/rdlogo.png" class="logo reubicar-logo" alt="Logo"></a>
 
-        <div>
-            <ul id="navbar" class="reubicar-ul re-ul-2">
+        <div> 
+            <ul class="navbar reubicar-ul">
                 <li><a href="./pages/hombres.html">Hombres</a></li>
                 <li><a href="./pages/mujeres.html">Mujeres</a></li>
                 <li><a href="./pages/nuevo.html">Nuevo</a></li>
                 <li><a href="./pages/rdfitness.html">RDFITNESS APP</a></li>
                 <li><a href="./pages/miperfil.html"><i class="fa fa-user"></i></a></li>
-                <li><input type="search" class="buscar-input" placeholder="Buscar"></li>
-                <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
-                <a href="#" id="close"><i class="far fa-times"></i></a>
+                <li><input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"></li>
+                <a href="#" class="close"><i class="far fa-times"></i></a>
+
+                <!-- boton de carrito-->
+                <li>
+                    <a  data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight"><i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>     
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">TU CARRITO ESTA VACIO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  
+                  <div class="offcanvas-body">
+                    <div class="carrito-content">
+                      <img src="./imgs/micarrito/empty-bag.jpg" alt="">
+                      <p>No hay productos en tu carro</p>
+                      <p>Elige una seccion para ir:</p>
+                      <a href="./hombres.html"><button>TIENDA HOMBRES</button></a>
+                      <a href="./mujeres.html"><button>TIENDA MUJERES</button></a>
+                    </div>
+                  </div>
+                </div>    
             </ul>
         </div>
-        <div id="mobile">
-            <i id="bar" class="fas fa-outdent"></i>
+        
+        <div class="mobile">
+            <i class="bar fas fa-outdent"></i>
         </div>
+        
     </header>
 
-
     <main>
-        <div id="portada"> <!--! Portada-->
+        <div class="portada"> <!--! Portada-->
             <p>Aprovecha los descuentos de hasta el 50%!</p>
             <h1>Supera tus limites con estilo.</h1>
             <h2>Haz que cada dia cuente.</h2>
             <h3>Las mejores telas, los mejores diseños.</h3>
             <button>Comprar</button>
         </div>
-        <div data-aos="fade-down" data-aos-duration="1500" id="servicios" class="section-padd"> <!--! Servicios-->
+
+        <div data-aos="fade-down" data-aos-duration="1500" class="servicios section-padd"> <!--! Servicios-->
             <div class="serv-box">
                 <img src="imgs/descuentos.png" alt="">
                 <h5>Grandes Descuentos</h5>
@@ -63,7 +89,8 @@
                 <h5>Calidad Premium</h5>
             </div>
         </div>
-        <div id="productos" class="section-padd"> <!--! Productos-->
+
+        <div class="productos section-padd"> <!--! Productos-->
             <h2 data-aos="fade-left" data-aos-duration="1200">TODOS LOS PRODUCTOS</h2>
             <p data-aos="fade-left" data-aos-duration="1200">Conoce toda nuestra colección</p>
             <div class="prod-container">     <!-- Container de todos los productos -->
@@ -262,23 +289,25 @@
             <a href="#"><button class="vertodos">Ver Todos</button></a>
         
         </div>
+
         <div class="separador"></div>
+
         <div data-aos-duration="1500" class="banners section-padd"> <!--! Banners (3) -->
-            <div data-aos="flip-left" class="banner-box">
+            <div data-aos="zoom-in" data-aos-duration="1700" class="banner-box">
                 <h3>Explora los ultimos ingresos y tendencias</h3>
                 <button>Nuevos Productos</button>
             </div>
-            <div data-aos="flip-left" data-aos-duration="1500"  class="banner-box banner-box2">
+            <div data-aos="zoom-in" data-aos-duration="1700"  class="banner-box banner-box2">
                 <h3>Lo mas elegido por nuestros clientes</h3>
                 <button>Mas Vendidos</button>
             </div>
-            <div data-aos="flip-left" data-aos-duration="1500" class="banner-box banner-box3">
+            <div data-aos="zoom-in" data-aos-duration="1700" class="banner-box banner-box3">
                 <h3>Complementa tu outfit con estilo</h3>
                 <button>Accesorios</button>
             </div>
         </div>
         
-        <div id="aboutus" class="section-padd">  <!--! About Us -->
+        <div class="aboutus section-padd">  <!--! About Us -->
         <h2>Sobre Nosotros</h2>
         <p>
             Hace una década, nació nuestra marca de ropa fitness, RD Fitness, con la visión de inspirar a las personas a alcanzar sus metas de bienestar a través de la moda activa. Desde nuestros modestos inicios en un pequeño taller, hemos evolucionado hasta convertirnos en un referente en el mundo del fitness. La calidad y el diseño innovador de nuestras prendas nos han permitido ganar la confianza de atletas y entusiastas del ejercicio en todo el mundo.
@@ -286,6 +315,7 @@
         <img src="./imgs/aboutus.jpg" alt="">
         <p>Con el tiempo, hemos expandido nuestra gama para incluir desde ropa de entrenamiento hasta elegantes prendas athleisure, manteniendo siempre el compromiso con la sostenibilidad y la ética en la producción. RD Fitness no solo viste cuerpos, sino que también promueve un estilo de vida activo y positivo, consolidándose como una marca que trasciende la moda para convertirse en un símbolo de bienestar y autenticidad.</p>
         </div>
+        
     </main>
 
     <footer class="section-padd footer-hombres">       <!--! Footer -->
@@ -351,6 +381,7 @@
 <script src="script.js"></script>
 <script>
     AOS.init();
-  </script>
+</script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

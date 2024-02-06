@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc3MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/estilos.css">
-</head>
+  </head>
 <body>
 
     <div class="preheader reubicar-pre">        <!--! Preheader-->
@@ -18,52 +18,52 @@
         <a href="../index.html"><img src="../imgs/rdlogo.png" class="logo reubicar-logo" alt="Logo"></a>
 
         <div> 
-            <ul id="navbar" class="reubicar-ul">
+            <ul class="navbar reubicar-ul">
                 <li><a class="active" href="../pages/hombres.html">Hombres</a></li>
                 <li><a href="../pages/mujeres.html">Mujeres</a></li>
                 <li><a href="../pages/nuevo.html">Nuevo</a></li>
                 <li><a href="../pages/rdfitness.html">RDFITNESS APP</a></li>
                 <li><a href="../pages/miperfil.html"><i class="fa fa-user"></i></a></li>
                 <li><input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"></li>
-                <a href="#" id="close"><i class="far fa-times"></i></a>
+                <a href="#" class="close"><i class="far fa-times"></i></a>
 
                 <!-- boton de carrito-->
-                <a  data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">
-                  <i class="fa fa-shopping-cart"></i>
-                </a>      
+                <li>
+                    <a  data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight"><i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>     
+
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
                   <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasRightLabel">TU CARRITO ESTA VACIO</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
+                  
                   <div class="offcanvas-body">
                     <div class="carrito-content">
                       <img src="../imgs/micarrito/empty-bag.jpg" alt="">
                       <p>No hay productos en tu carro</p>
                       <p>Elige una seccion para ir:</p>
-                      <button>TIENDA HOMBRES</button>
-                      <button>TIENDA MUJERES</button>
+                      <a href="./hombres.html"><button>TIENDA HOMBRES</button></a>
+                      <a href="./mujeres.html"><button>TIENDA MUJERES</button></a>
                     </div>
                   </div>
-                </div>
-                
+                </div>    
             </ul>
         </div>
 
-
-        <div id="mobile">
-            <i id="bar" class="fas fa-outdent"></i>
+        <div class="mobile">
+            <i class="bar fas fa-outdent"></i>
         </div>
     </header>
-
-
 
     <main>
       <!--! HERO BANNER (1)(Nuevos Lanzamientos) -->
         <div class="hero-uno">
       <div class="hero-des container-fluid d-flex flex-column justify-content-center align-items-flex-start ps-5">
           <p class="h1 display-4 fw-semibold">Nuevos Lanzamientos</p>
-          <p class="h6 fw-normal text-muted text-b1-h1">Diseñados para el maximo rendimiento. Lo mas importante.</p>
+          <p class="h6 fw-normal text-b1-h1">Diseñados para el maximo rendimiento. Lo mas importante.</p>
       </div>
         </div>
        <!--! HERO CAROUSEL (1)(Nuevos Lanzamientos) -->
@@ -437,15 +437,6 @@
       </div>
     </main>
 
-
-
-
-
-    
-
-
-
-
     <footer class="section-padd footer-hombres">       <!--! Footer -->
 
         <div class="col-container">
@@ -503,7 +494,7 @@
     <div class="copyright">
         <p>© 2023, Ramiro Delgado | Coderhouse | Derechos Reservados.</p>
     </div>
-</footer>
+    </footer>
 
     <script src="../script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

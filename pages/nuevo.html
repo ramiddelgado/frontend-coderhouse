@@ -19,18 +19,20 @@
         <a href="../index.html#"><img src="../imgs/rdlogo.png" class="logo reubicar-logo" alt="Logo"></a>
 
         <div>
-            <ul id="navbar" class="reubicar-ul">
+            <ul class="navbar reubicar-ul">
                 <li><a href="../pages/hombres.html">Hombres</a></li>
                 <li><a href="../pages/mujeres.html">Mujeres</a></li>
                 <li><a class="active" href="./nuevo.html">Nuevo</a></li>
                 <li><a href="../pages/rdfitness.html">RDFITNESS APP</a></li>
                 <li><a href="../pages/miperfil.html"><i class="fa fa-user"></i></a></li>
                 <li><input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"></li>
-                <a href="#" id="close"><i class="far fa-times"></i></a>
+                <a href="#" class="close"><i class="far fa-times"></i></a>
 
-                <a  data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">
-                  <i class="fa fa-shopping-cart"></i>
-                </a>      
+                <li>
+                  <a  data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">
+                    <i class="fa fa-shopping-cart"></i>
+                  </a>
+                </li>   
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                   <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasRightLabel">TU CARRITO ESTA VACIO</h5>
@@ -41,95 +43,57 @@
                       <img src="../imgs/micarrito/empty-bag.jpg" alt="">
                       <p>No hay productos en tu carro</p>
                       <p>Elige una seccion para ir:</p>
-                      <button>TIENDA HOMBRES</button>
-                      <button>TIENDA MUJERES</button>
+                      <a href="./hombres.html"><button>TIENDA HOMBRES</button></a>
+                      <a href="./mujeres.html"><button>TIENDA MUJERES</button></a>
                     </div>
                   </div>
                 </div>
             </ul>
         </div>
-        <div id="mobile">
-            <i id="bar" class="fas fa-outdent"></i>
+        <div class="mobile">
+            <i class="bar fas fa-outdent"></i>
         </div>
     </header>
 
     <main>
       <!--! SIDEBAR -->
-       <!-- Sidebar -->
-        <nav
-        id="sidebarMenu"
-        class="collapse d-lg-block sidebar collapse bg-white">
+
+    <nav class="collapse d-lg-block sidebar collapse bg-white">
       <div class="position-sticky">
-      <p style="text-align: center; color: rgb(65, 65, 65); font-family: Poppins; font-size: 18px; margin-top: -15px;">NUEVOS INGRESOS</p>
-      <p style="font-size: 13px; color: gray; text-align: center; font-family: Poppins; margin-bottom: -15px; border-bottom: 1px solid gray; padding-bottom: 30px;">65 productos</p>
-       <div class="list-group list-group-flush mx-3 mt-4">
-         <a
-        href="#"
-        class="list-group-item list-group-item-action py-3 ripple"
-        aria-current="true">
-       <i class="fas fa-dice-d6 fa-fw me-3"></i><span>Camisetas</span>
-         </a>
-         <a
-        href="#"
-        class="list-group-item list-group-item-action py-3 ripple"
-        >
-       <i class="fas fa-dice-d6 fa-fw me-3"></i
-         ><span>Shorts</span>
-         </a>
-         <a
-        href="#"
-        class="list-group-item list-group-item-action py-3 ripple"
-        ><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Tops</span></a
-       >
-         <a
-        href="#"
-        class="list-group-item list-group-item-action py-3 ripple"
-        ><i class="fas fa-dice-d6 fa-fw me-3"></i
-       ><span>Sostenes</span></a
-       >
-         <a
-        href="#"
-        class="list-group-item list-group-item-action py-3 ripple"
-        >
-       <i class="fas fa-dice-d6 fa-fw me-3"></i><span>Joggins</span>
-         </a>
-         <a
-        href="#"
-        class="list-group-item list-group-item-action py-3 ripple"
-        ><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Calzas & Bikers</span></a
-       >
-         <a
-        href="#"
-        class="list-group-item list-group-item-action py-3 ripple"
-        ><i class="fas fa-dice-d6 fa-fw me-3"></i
-       ><span>Accesorios</span></a
-       >
-         <a
-        href="#"
-        class="list-group-item list-group-item-action py-3 ripple"
-        ><i class="fas fa-dice-d6 fa-fw me-3"></i
-       ><span>Buzos</span></a
-       >
-         <a
-        href="#"
-        class="list-group-item list-group-item-action py-3 ripple"
-        ><i class="fas fa-dice-d6 fa-fw me-3"></i
-       ><span>Camperas</span></a
-       >
-         <a
-        href="#"
-        class="list-group-item list-group-item-action py-3 ripple"
-        ><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Conjuntos</span></a
-       >
-         <a
-        href="#"
-        class="list-group-item list-group-item-action py-3 ripple"
-        ><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Oversized</span></a
-       >
-       </div>
+
+        <p style="text-align: center; color: rgb(65, 65, 65); font-family: Poppins; font-size: 18px; margin-top: -1px;">NUEVOS INGRESOS</p>
+        <p style="font-size: 13px; color: gray; text-align: center; font-family: Poppins; margin-bottom: -1px; border-bottom: 1px solid gray; padding-bottom: 10px; margin-top: -10px;">65 productos</p>
+
+        <div class="list-group list-group-flush mx-3 mt-4">
+
+         <a href="#" class="list-group-item list-group-item-action py-3 ripple" aria-current="true"><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Camisetas</span></a>
+
+         <a href="#" class="list-group-item list-group-item-action py-3 ripple"><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Shorts</span></a>
+
+         <a href="#" class="list-group-item list-group-item-action py-3 ripple"><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Tops</span></a>
+
+         <a href="#" class="list-group-item list-group-item-action py-3 ripple"><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Sostenes</span></a>
+
+         <a href="#" class="list-group-item list-group-item-action py-3 ripple"><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Joggins</span></a>
+
+         <a href="#"class="list-group-item list-group-item-action py-3 ripple"><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Calzas & Bikers</span></a>
+
+         <a href="#" class="list-group-item list-group-item-action py-3 ripple"><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Accesorios</span></a>
+
+         <a href="#" class="list-group-item list-group-item-action py-3 ripple"><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Buzos</span></a>
+
+         <a href="#" class="list-group-item list-group-item-action py-3 ripple"><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Camperas</span>
+        </a>
+
+         <a href="#" class="list-group-item list-group-item-action py-3 ripple"><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Conjuntos</span>
+        </a>
+
+         <a href="#" class="list-group-item list-group-item-action py-3 ripple"><i class="fas fa-dice-d6 fa-fw me-3"></i><span>Oversized</span>
+        </a>
+        </div>
       </div>
-        </nav>
-      <!-- Sidebar -->
+    </nav>
+  
       
       <!--! CARDS SECTION -->
       

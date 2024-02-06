@@ -19,18 +19,20 @@
         <a href="../index.html#"><img src="../imgs/rdlogo.png" class="logo reubicar-logo" alt="Logo"></a>
 
         <div>
-            <ul id="navbar" class="reubicar-ul">
+            <ul class="navbar reubicar-ul">
                 <li><a href="../pages/hombres.html">Hombres</a></li>
                 <li><a href="../pages/mujeres.html">Mujeres</a></li>
                 <li><a href="../pages/nuevo.html">Nuevo</a></li>
                 <li><a class="active" class="active" href="./rdfitness.html">RDFITNESS APP</a></li>
                 <li><a href="../pages/miperfil.html"><i class="fa fa-user"></i></a></li>
                 <li><input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"></li>
-                <a href="#" id="close"><i class="far fa-times"></i></a>
+                <a href="#" class="close"><i class="far fa-times"></i></a>
 
-                <a  data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">
-                    <i class="fa fa-shopping-cart"></i>
-                  </a>      
+                <li>
+                    <a  data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>    
                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
                       <h5 class="offcanvas-title" id="offcanvasRightLabel">TU CARRITO ESTA VACIO</h5>
@@ -41,14 +43,14 @@
                         <img src="../imgs/micarrito/empty-bag.jpg" alt="">
                         <p>No hay productos en tu carro</p>
                         <p>Elige una seccion para ir:</p>
-                        <button>TIENDA HOMBRES</button>
-                        <button>TIENDA MUJERES</button>
+                        <a href="./hombres.html"><button>TIENDA HOMBRES</button></a>
+                        <a href="./mujeres.html"><button>TIENDA MUJERES</button></a>
                       </div>
                     </div>
                   </div>
             </ul>
-            <div id="mobile">
-                <i id="bar" class="fas fa-outdent"></i>
+            <div class="mobile">
+                <i class="bar fas fa-outdent"></i>
             </div>
         </div>
     </header>

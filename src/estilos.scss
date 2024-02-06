@@ -50,11 +50,16 @@ $gris: rgb(96, 96, 96);
     position: sticky;
     top: 0;
 
+    
+    .reubicar-ul {
+       padding-top: 17px;
+      }
+
     .logo {
         width: 80px;
       }
 
-    #navbar {
+    .navbar {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -63,7 +68,7 @@ $gris: rgb(96, 96, 96);
         color: rgb(0, 25, 99);
         /* letter-spacing: 1px; */
 
-        #close {
+        .close {
             display: none;
           }
 
@@ -100,13 +105,15 @@ $gris: rgb(96, 96, 96);
                   }
       }
 
-      #mobile {           /*Para ocultar el menu mobile*/
+      .mobile {           /*Para ocultar el menu mobile*/
         display: none;
       }
   }
 
+  
+
 //! (portada)
-#portada {
+.portada {
     background-image: url(../imgs/portada2-merch.jpg);
     height: 60vh;
     width: 100%;
@@ -123,19 +130,22 @@ $gris: rgb(96, 96, 96);
 
     p {
         font-style: oblique;
-        color: grey;
+        color: rgb(12, 36, 145)
       }
 
     h2 {
-        color: rgb(0, 56, 130);
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.500);
       }
 
     h1, h3 {
-        color: rgb(62, 62, 62);
+        color: rgb(255, 255, 255);
+                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.500);
       }
 
     h3 {
         font-weight: 400;
+
       }
 
     button {
@@ -162,6 +172,7 @@ $gris: rgb(96, 96, 96);
         background-color: white;
         color: rgba(28, 60, 147, 0.839);
         box-shadow: 1px 1px 1px #636363;
+        font-weight: 600;
       }
   }
 
@@ -169,9 +180,10 @@ $gris: rgb(96, 96, 96);
 .section-padd {        /* padding generico a las sections*/
     padding: 120px 100px 40px 100px;
     font-family: Spartan;
+    overflow: hidden;
   }
 
-#servicios {
+.servicios {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -214,14 +226,15 @@ $gris: rgb(96, 96, 96);
 
 //! (productos)
 
-#productos {
+.productos {
     text-align: center;
+    overflow: hidden;
 
     .prod-box {
         width: 20%;
         min-width: 250px;
         padding: 10px 15px;
-        border: 1px solid #cce7d0;
+        border: 1px solid #ccdde7;
         border-radius: 25px;
         cursor: pointer;
         box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
@@ -302,6 +315,7 @@ $gris: rgb(96, 96, 96);
         background-color: rgb(0, 21, 61);
         color: white;
         border-radius: 5px;
+        border: none;
         font-weight: 600;
         font-size: 0.9rem;
         cursor: pointer;
@@ -334,7 +348,7 @@ $gris: rgb(96, 96, 96);
         background-image: url(../imgs/tp1.jpg);
         min-width: 300px;
         width: 400px;
-        height: 60vh;
+        height: 70vh;
         background-size: cover;
         background-position: center;
         padding: 20px;
@@ -380,7 +394,7 @@ $gris: rgb(96, 96, 96);
 
 //! (about us)
 
-#aboutus {
+.aboutus {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -404,6 +418,9 @@ $gris: rgb(96, 96, 96);
 footer {
     border-top: 1px solid #d5d5d5;
     margin-top: 100px;
+    z-index: 150;
+    position: sticky;
+    background-color: white;
 
     .col-container {
         display: flex;
@@ -505,11 +522,24 @@ footer {
       }
   }
 
+
 //! (Mediaquerys index.html)
 // tablets
 @media only screen and (min-width: 481px) and (max-width: 1200px)    {
 //!(header mQ)
-#navbar {           /*? Menu Hamburguesa*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 35px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  position: sticky;
+  top: 0;
+
+.navbar {           /*? Menu Hamburguesa*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -538,11 +568,7 @@ footer {
         }
     }
 
-    .active {
-        right: 0px;
-    }
-
-    #close {        /*? cerrar navbar*/
+    .close {        /*? cerrar navbar*/
         display: initial;
         position: absolute;
         top: 30px;
@@ -552,7 +578,11 @@ footer {
     }
 }
 
-#mobile {
+.navbar.active {
+    right: 0px;
+}
+
+.mobile {
     display: flex;
     align-items: center;
 
@@ -561,25 +591,22 @@ footer {
         color: rgb(6, 31, 102);
     }
  }
-
+}
 
 //! (portada mQ)
-#portada {
+.portada {
     height: 70vh;
     padding-left: 0px;
-    background-position: top 0% right 50%;
+    background-position: top 0% right 30%;
 
-    h3 {
-        color: white;
-    }
     p, h1 {
         visibility: hidden;
     }
     h2 {
-        color: rgb(109, 150, 211);
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.656);
     }
     button {
-        padding: 10px 18px;
         background-color: rgba(28, 60, 147, 0.839);
         border-radius: 15px;
         background-image:none;
@@ -600,12 +627,12 @@ footer {
 .section-padd {
     padding: 40px 10px;
 }
-#servicios .serv-box {
+.servicios .serv-box {
     margin: 30px;
     }
 
 //! (productos mQ)
-#productos {
+.productos {
     .prod-container {
         display: flex;
         /* justify-content: space-between; */
@@ -641,7 +668,7 @@ footer {
 }
 
 //! (about us mQ)
-#aboutus {
+.aboutus {
     p {
         width: 460px;
     }
@@ -660,6 +687,7 @@ footer {
     .apps {
         display: flex;
         gap: 15px;
+        margin-left: -15px;
     }
     .columna {
         align-items: stretch;
@@ -707,7 +735,7 @@ footer {
     position: sticky;
     top: 0;
 
-    #navbar {           /*? Menu Hamburguesa*/
+    .navbar {           /*? Menu Hamburguesa*/
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -736,11 +764,7 @@ footer {
               }
           }
 
-          .active {
-            right: 0px;
-          }
-
-          #close {        /*? cerrar navbar*/
+          .close {        /*? cerrar navbar*/
             display: initial;
             position: absolute;
             top: 30px;
@@ -750,7 +774,11 @@ footer {
           }
       }
 
-      #mobile {
+      .navbar.active {
+          right: 0px;
+      }
+
+      .mobile {
         display: flex;
         align-items: center;
 
@@ -762,23 +790,25 @@ footer {
   }
 
 //! (portada mQ)
-#portada {
+.portada {
     height: 60vh;
     padding-left: 0px;
-    background-position: top 0% right 13%;
+    background-position: top 0% right 30%;
 
     h3 {
         color: white;
+        text-align: center;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.656);
     }
     p, h1 {
         visibility: hidden;
       }
     h2 {
-        color: rgb(109, 150, 211);
+        color: rgb(255, 255, 255);
         font-size: 20px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.656);
       }
     button {
-        padding: 10px 18px;
         background-color: rgba(28, 60, 147, 0.839);
         border-radius: 15px;
         background-image:none;
@@ -799,12 +829,12 @@ footer {
 .section-padd {
     padding: 40px 10px;
   }
-#servicios .serv-box {
+.servicios .serv-box {
     margin: 30px;
     }
 
 //! (productos mQ)
-#productos {
+.productos {
     .prod-container {
         display: flex;
         /* justify-content: space-between; */
@@ -860,7 +890,7 @@ footer {
 }
 
 //! (about us mQ)
-#aboutus {
+.aboutus {
     p {
         width: 320px;
         font-size: 0.8rem;
@@ -876,6 +906,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    margin-left: 20%;
 
     .apps {
         display: flex;
@@ -916,13 +947,12 @@ footer {
 .section-padd {
     padding: 120px 40px 40px 40px;
 }
-#portada {
+.portada {
     height: 60vh;
     padding-left: 0px;
     background-position: top 0% right 45%;
 
     button {
-        padding: 10px 18px;
         background-color: rgba(28, 60, 147, 0.839);
         border-radius: 15px;
         background-image:none;
@@ -937,19 +967,28 @@ footer {
         cursor: pointer;
         font-family: Spartan;
     }
+
+        button:hover {
+        background-color: rgba(255, 255, 255, 0.750);
+        color: rgba(28, 60, 147, 0.839);
+        box-shadow: 1px 1px 1px #636363;
+        font-weight: 700;
+      }
+
     h3 {
-        color: rgba(0, 0, 0, 0.5);
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.656);
       }
     p, h1 {
         visibility: hidden;
     }
     h2, h3 {
         font-size: 1.5rem;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.656);
     }
 }
 
 //! (servicios mQ)
-#servicios {
+.servicios {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -971,7 +1010,7 @@ footer {
 .banners {
     .banner-box {
         margin: 20px 20px;
-        width: 300px;
+        width: 350px;
     }
     .banner-box2 {
         background-image: url(../imgs/tp2.jpg);
@@ -982,7 +1021,7 @@ footer {
 }
 
 //! (about us mQ)
-#aboutus {
+.aboutus {
     p {
         width: 800px;
         font-size: 0.8rem;
@@ -1020,9 +1059,6 @@ color: #212529;
 background-color: #fff;
 }
 
-.reubicar-ul {
-    padding-top: 17px;
-    }
     
 .reubicar-header {
         height: 83px;
@@ -1031,11 +1067,7 @@ background-color: #fff;
 .reubicar-logo {
         margin-bottom: 5px;
     }
-.footer-hombres {
-        margin-top: 10vh;
-        position: static;   /* Esto y bgc:fff para tapar la sidebar con index negativo. Si no, se superponian (en nuevo.html). Le quiero dar prioridad al footer*/
-        background-color: #fff;
-    }
+
   
 .fab, .far {
       font-weight: 900;
@@ -1095,6 +1127,9 @@ $card-spacer-y: 0.4rem;
     margin-top: 3rem;
     margin-bottom: 3rem; 
 }
+
+//! extras
+
 
 
 

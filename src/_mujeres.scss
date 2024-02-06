@@ -20,12 +20,30 @@
     .hero-uno-m {
         background-position: 60% 50%;
         color: azure;
+
+        p:nth-child(1){
+          text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.500);
+        }
       }
       .hero-dos-m {
         background-position: 80% 50%;
+
+        p:nth-child(1){
+          text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.500);
+        }
+        p:nth-child(2){
+          text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.500);
+        }
       }
       .hero-tres-m {
         background-position: 90% 50%;
         color: azure;
+
+        p:nth-child(1){
+          text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.500);
+        }
+        p:nth-child(2){
+          text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.500);
+        }
       }
 }
