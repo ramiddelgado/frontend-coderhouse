@@ -157,6 +157,7 @@
         flex-direction: column;
         margin: 0px;
         padding-left: 0;
+        cursor: pointer;
       }
     h4 {
         background-color: #fff;
@@ -330,7 +331,7 @@
 
 //mediaquerys
 //mobile & tablets
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
     .hero-rdfit {
       margin: 0 60px;
       max-width: 100rem;
@@ -361,7 +362,7 @@
     }
   }
 // fixes tablets
-  @media only screen and (min-width: 768px) and (max-width:1299px) {
+  @media only screen and (min-width: 768px) and (max-width:1200px) {
 
     .blog-container {
       width: 100%;

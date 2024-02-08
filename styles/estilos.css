@@ -81,7 +81,7 @@
 .header .navbar li a:hover::after {
   content: "";
   width: 30%;
-  height: 1.5px;
+  height: 2px;
   background: rgb(100, 158, 221);
   position: absolute;
   bottom: -4px;
@@ -861,6 +861,14 @@ footer .fila-container .fila2 {
     width: 800px;
   }
 }
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+  .aboutus p {
+    width: 800px;
+  }
+  .aboutus img {
+    width: 800px;
+  }
+}
 .buscar-input {
   display: block;
   width: 100%;
@@ -1209,6 +1217,7 @@ footer .fila-container .fila2 {
   flex-direction: column;
   margin: 0px;
   padding-left: 0;
+  cursor: pointer;
 }
 .blog-articles h4, .blog-articles .h4 {
   background-color: #fff;
@@ -1370,7 +1379,7 @@ footer .fila-container .fila2 {
   margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   .hero-rdfit {
     margin: 0 60px;
     max-width: 100rem;
@@ -1394,7 +1403,7 @@ footer .fila-container .fila2 {
     padding: 0rem;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1299px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   .blog-container {
     width: 100%;
   }
